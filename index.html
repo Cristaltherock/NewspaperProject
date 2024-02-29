@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newspaper Landing Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>The Flower Newspaper</h1>
+        <nav>
+            <div class="hamburger">☰</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="article.html">Article</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="featured-article">
+            <h2>Featured Article</h2>
+            <p> Below you will fine the featured articles for this month</p>
+            <ul>
+                <li>How to properly take care of Snake Plants</li>
+                <li>The benifits of having plants in your home</li>
+                <li>Why do plants need sun?</li>
+            </ul>
+        </section>
+        <section class="latest-news">
+            <h2>Latest News</h2>
+            <p> Week: Monday 18th, 2024</p>
+            <ul>
+                <li>Flower Festival Coming to Atltant April 14, 2024</li>
+                <li>Workshop - "How to Plant your plants properly"</li>
+                <li> The Plant Fundraiser</li>
+            </ul>
+            
+        </section>
+    </main> 
+    
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function(){
+            document.querySelector('nav ul').classList.toggle('active');
+    })
+    </script>
+    
+    <footer>
+        <p> Contact us at: Theflowersnewspaper.com</p>
+    </footer>
+
+
+    
+</body>
+</html>

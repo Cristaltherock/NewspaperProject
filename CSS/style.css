@@ -1,0 +1,163 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(202, 193, 178);
+    margin: 0%;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(2, 2, 2);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px
+    
+}
+
+main { 
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+body {
+    margin: 0%;
+    min-height: 120vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(202, 193, 178);
+    margin-top: auto;
+
+}
+
+.article-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+main { 
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* 3:1 ration betwwn content */
+    gap: 20px;
+    padding: 20px;
+
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.advertisement {
+    padding: 10px;
+    border: 1px solid #2b7a00;
+    text-align: center;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 4fr)); /* creates a responsive grid */ 
+    gap: 20px; /* spaces between photos */ 
+    padding: 20px;
+    
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery-control {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    justify-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px; 
+}
+
+/* Hamburger Menu Style */ 
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+/* Hide Regular navigation items on smaller screens */ 
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* show hamburger menu */ 
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none; /* Initially hide navigation items */
+    }
+
+    /* When clicking the hambuger menu, use JavaScript to toggle this class to display the items */ 
+    nav ul.active {
+        display: flex; /* display navigation items in a column */ 
+    }
+}
+
+.featured-article p {
+    font-size: medium;
+    font-weight: bold;
+}
+
+.featured-article ul li {
+    color: rgb(129, 129, 129);
+    font-size: larger; 
+    margin-bottom: 30px;
+}
+
+.latest-news p {
+    font-size: medium;
+    font-weight: bold;
+}
+
+.latest-news ul li {
+    color: rgb(129, 129, 129);
+    font-size: larger; 
+    margin-bottom: 30px;
+}
+
+.article-content p {
+    line-height: 2.5;
+}
+
+.article-content p {
+    font-size: medium;
+    font-weight: bold;
+}
